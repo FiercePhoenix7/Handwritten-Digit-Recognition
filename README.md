@@ -30,7 +30,7 @@ python triaining_using_TensorFlow.py
 ```
 This will produce a file:
 ```
-mnist_dense_model_2.h5
+Model.h5
 ```
 
 ### 2️⃣ Run the Inference GUI
