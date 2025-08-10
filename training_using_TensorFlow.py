@@ -1,9 +1,9 @@
 import tensorflow as tf
 import numpy as np
-from tensorflow.keras.models import Sequential # type: ignore
-from tensorflow.keras.layers import Dense, Input #type: ignore
-from tensorflow.keras.datasets import mnist # type: ignore
-from tensorflow.keras.utils import to_categorical #type: ignore
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Input 
+from tensorflow.keras.datasets import mnist 
+from tensorflow.keras.utils import to_categorical 
 
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
