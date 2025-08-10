@@ -2,15 +2,10 @@ import pygame
 import numpy as np
 import sys
 import tensorflow as tf
-from tensorflow.keras.models import load_model # type: ignore
+from tensorflow.keras.models import load_model
 
 ####################### SETTINGS ###########################
 pygame.init()
-
-#pixel_width = int(input("Enter the pixel width : "))
-#pixel_height = int(input("Enter the pixel height : "))
-#pixel_side = int(input("Enter length of one side of a pixel : "))
-
 
 pixel_width = 28
 pixel_height = 28
@@ -28,7 +23,7 @@ WHITE = (225, 225, 225)
 
 FPS = 57
 
-###################### APP CLASS ########################
+######################## APP CLASS ##########################
 
 class App:
     def __init__(self):
@@ -43,7 +38,6 @@ class App:
     def run(self):
         while self.running:
             self.events()
-            self.updates()
             self.draw()
         pygame.quit()
         sys.exit()
@@ -68,10 +62,6 @@ class App:
                 self.display_prediction()
             if self.pressed:
                 self.mouse_pos = pygame.mouse.get_pos()
-
-    
-    def updates(self):
-        pass
 
     def draw(self):
         if self.pressed:   
@@ -132,6 +122,8 @@ class App:
             textRect = text.get_rect()
             textRect.topleft = (WIDTH - 250, 80 + digit*45)
             self.screen.blit(text, textRect)
+
+###############################################################
 
 app = App()
 app.run()
