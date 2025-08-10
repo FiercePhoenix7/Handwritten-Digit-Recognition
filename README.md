@@ -51,5 +51,6 @@ python inference_using_TensorFlow.py
 - **Output Layer**: 10 neurons (one for each digit 0–9), linear activation + softmax during inference
 
 ## Demo
-*(Add a GIF or screenshot of your Pygame app here)*
+![Demo](https://github.com/user-attachments/assets/bc6d857f-165c-4740-95ac-b9e9e2f4c999)
+
 
